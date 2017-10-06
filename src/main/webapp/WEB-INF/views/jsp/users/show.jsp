@@ -68,6 +68,9 @@
 		<div class="col-sm-10">${user.skill}</div>
 	</div>
 
+	<spring:url value="/users/${user.id}/update" var="updateUrl" />
+	<button class="btn btn-primary" onclick="location.href='${updateUrl}'">Atualizar</button>
+
 </div>
 
 <jsp:include page="../fragments/footer.jsp" />
