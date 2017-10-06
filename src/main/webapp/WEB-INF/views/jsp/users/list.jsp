@@ -26,7 +26,6 @@
 		<table class="table table-striped">
 			<thead>
 				<tr>
-					<th>#ID</th>
 					<th>Nome</th>
 					<th>Email</th>
 					<th>Framework</th>
@@ -36,9 +35,6 @@
 
 			<c:forEach var="user" items="${users}">
 				<tr>
-					<td>
-						${user.id}
-					</td>
 					<td>${user.name}</td>
 					<td>${user.email}</td>
 					<td><c:forEach var="framework" items="${user.framework}" varStatus="loop">
