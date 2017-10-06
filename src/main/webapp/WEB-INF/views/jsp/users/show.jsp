@@ -50,9 +50,10 @@
 
 	<div class="row">
 		<label class="col-sm-2">Sexo</label>
-		<div class="col-sm-10">${user.sex}</div>
+		<c:if test="${user.sex eq 'M'}"><div class="col-sm-10">Masculino</div></c:if>
+		<c:if test="${user.sex eq 'F'}"><div class="col-sm-10">Feminino</div></c:if>
 	</div>
-
+	
 	<div class="row">
 		<label class="col-sm-2">Número</label>
 		<div class="col-sm-10">${user.number}</div>
