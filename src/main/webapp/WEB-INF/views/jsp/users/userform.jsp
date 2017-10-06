@@ -27,12 +27,12 @@
 
 		<form:hidden path="id" />
 		
-		<spring:bind path="name">
+		<spring:bind path="login">
 			<div class="form-group ${status.error ? 'has-error' : ''}">
 				<label class="col-sm-2 control-label">Login</label>
 				<div class="col-sm-10">
-					<form:input path="name" type="text" disabled="true" class="form-control " id="login" placeholder="Login" />
-					<form:errors path="name" class="control-label" />
+					<form:input path="login" type="text" disabled="true" class="form-control " id="login" placeholder="Login" />
+					<form:errors path="login" class="control-label" />
 				</div>
 			</div>
 		</spring:bind>
