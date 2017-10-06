@@ -31,7 +31,16 @@
 			<div class="form-group ${status.error ? 'has-error' : ''}">
 				<label class="col-sm-2 control-label">Login</label>
 				<div class="col-sm-10">
-					<form:input path="login" type="text" disabled="true" class="form-control " id="login" placeholder="Login" />
+					
+					<c:choose>
+						<c:when test="${userForm['new']}">
+							<form:input path="login" type="text" disabled="false" class="form-control " id="login" placeholder="Login" />
+						</c:when>
+						<c:otherwise>
+							<form:input path="login" type="text" disabled="true" class="form-control " id="login" placeholder="Login" />
+						</c:otherwise>
+					</c:choose>
+				
 					<form:errors path="login" class="control-label" />
 				</div>
 			</div>
