@@ -11,6 +11,9 @@ public class User {
 
 	// form:input - textbox
 	String email;
+	
+	//form:input - textbox
+	private String login;
 
 	// form:textarea - textarea
 	String address;
@@ -142,9 +145,17 @@ public class User {
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", email=" + email + ", address=" + address
-				+ ", password=" + password + ", confirmPassword=" + confirmPassword
+				+", login="+ login + ", password=" + password + ", confirmPassword=" + confirmPassword
 				+ ", newsletter=" + newsletter + ", framework=" + framework + ", sex=" + sex
 				+ ", number=" + number + ", country=" + country + ", skill=" + skill + "]" + isNew();
+	}
+
+	public String getLogin() {
+		return login;
+	}
+
+	public void setLogin(String login) {
+		this.login = login;
 	}
 
 }
