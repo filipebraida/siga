@@ -71,8 +71,8 @@ public class UserDaoImpl implements UserDao {
 
 		KeyHolder keyHolder = new GeneratedKeyHolder();
 		
-		String sql = "INSERT INTO USERS(NAME, EMAIL, ADDRESS, PASSWORD, NEWSLETTER, FRAMEWORK, SEX, NUMBER, COUNTRY, SKILL) "
-				+ "VALUES ( :name, :email, :address, :password, :newsletter, :framework, :sex, :number, :country, :skill)";
+		String sql = "INSERT INTO USERS(NAME, EMAIL, ADDRESS, LOGIN, PASSWORD, NEWSLETTER, FRAMEWORK, SEX, NUMBER, COUNTRY, SKILL) "
+				+ "VALUES ( :name, :email, :address, :login, :password, :newsletter, :framework, :sex, :number, :country, :skill)";
 
 		namedParameterJdbcTemplate.update(sql, getSqlParameterByModel(user), keyHolder);
 		user.setId(keyHolder.getKey().intValue());
@@ -106,6 +106,7 @@ public class UserDaoImpl implements UserDao {
 		paramSource.addValue("id", user.getId());
 		paramSource.addValue("name", user.getName());
 		paramSource.addValue("email", user.getEmail());
+		paramSource.addValue("login", user.getLogin());
 		paramSource.addValue("address", user.getAddress());
 		paramSource.addValue("password", user.getPassword());
 		paramSource.addValue("newsletter", user.isNewsletter());
@@ -127,6 +128,7 @@ public class UserDaoImpl implements UserDao {
 			user.setId(rs.getInt("id"));
 			user.setName(rs.getString("name"));
 			user.setEmail(rs.getString("email"));
+			user.setLogin(rs.getString("login"));
 			user.setFramework(convertDelimitedStringToList(rs.getString("framework")));
 			user.setAddress(rs.getString("address"));
 			user.setCountry(rs.getString("country"));
