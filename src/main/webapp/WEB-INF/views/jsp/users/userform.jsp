@@ -103,10 +103,10 @@
 
 		<spring:bind path="sex">
 			<div class="form-group ${status.error ? 'has-error' : ''}">
-				<label class="col-sm-2 control-label">Sex</label>
+				<label class="col-sm-2 control-label">Sexo</label>
 				<div class="col-sm-10">
-					<label class="radio-inline"> <form:radiobutton path="sex" value="M" /> Male
-					</label> <label class="radio-inline"> <form:radiobutton path="sex" value="F" /> Female
+					<label class="radio-inline"> <form:radiobutton path="sex" value="M" /> Masculino
+					</label> <label class="radio-inline"> <form:radiobutton path="sex" value="F" /> Feminino
 					</label> <br />
 					<form:errors path="sex" class="control-label" />
 				</div>

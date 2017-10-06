@@ -205,10 +205,8 @@ public class UserController {
 		model.addAttribute("numberList", numbers);
 
 		Map<String, String> country = new LinkedHashMap<String, String>();
-		country.put("US", "United Stated");
-		country.put("CN", "China");
-		country.put("SG", "Singapore");
-		country.put("MY", "Malaysia");
+		country.put("AR", "Argentina");
+		country.put("BR", "Brasil");
 		model.addAttribute("countryList", country);
 
 	}
