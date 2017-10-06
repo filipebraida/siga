@@ -31,7 +31,7 @@
 			<div class="form-group ${status.error ? 'has-error' : ''}">
 				<label class="col-sm-2 control-label">Nome</label>
 				<div class="col-sm-10">
-					<form:input path="name" type="text" class="form-control " id="name" placeholder="Name" />
+					<form:input path="name" type="text" class="form-control " id="name" placeholder="Nome" />
 					<form:errors path="name" class="control-label" />
 				</div>
 			</div>
@@ -41,7 +41,7 @@
 			<div class="form-group ${status.error ? 'has-error' : ''}">
 				<label class="col-sm-2 control-label">Email</label>
 				<div class="col-sm-10">
-					<form:input path="email" class="form-control" id="email" placeholder="Email" />
+					<form:input path="email" class="form-control" id="email" placeholder="E-mail" />
 					<form:errors path="email" class="control-label" />
 				</div>
 			</div>
@@ -51,7 +51,7 @@
 			<div class="form-group ${status.error ? 'has-error' : ''}">
 				<label class="col-sm-2 control-label">Senha</label>
 				<div class="col-sm-10">
-					<form:password path="password" class="form-control" id="password" placeholder="password" />
+					<form:password path="password" class="form-control" id="password" placeholder="Senha" />
 					<form:errors path="password" class="control-label" />
 				</div>
 			</div>
@@ -61,7 +61,7 @@
 			<div class="form-group ${status.error ? 'has-error' : ''}">
 				<label class="col-sm-2 control-label">Confirmar a Senha</label>
 				<div class="col-sm-10">
-					<form:password path="confirmPassword" class="form-control" id="password" placeholder="password" />
+					<form:password path="confirmPassword" class="form-control" id="password" placeholder="Confirmação de senha" />
 					<form:errors path="confirmPassword" class="control-label" />
 				</div>
 			</div>
@@ -71,7 +71,7 @@
 			<div class="form-group ${status.error ? 'has-error' : ''}">
 				<label class="col-sm-2 control-label">Endereço</label>
 				<div class="col-sm-10">
-					<form:textarea path="address" rows="5" class="form-control" id="address" placeholder="address" />
+					<form:textarea path="address" rows="5" class="form-control" id="address" placeholder="Endereço" />
 					<form:errors path="address" class="control-label" />
 				</div>
 			</div>
